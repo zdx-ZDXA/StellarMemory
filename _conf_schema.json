@@ -1,0 +1,20 @@
+{
+  "db_path": {
+    "type": "string",
+    "description": "数据库路径",
+    "default": "",
+    "hint": "留空使用默认 ~/.astrbot/data/StellarMemory/stellar_memory.db"
+  },
+  "recall_limit": {
+    "type": "int",
+    "description": "每次召回条数",
+    "default": 6,
+    "hint": "给模型参考的记忆条数，太多会占 token"
+  },
+  "bot_id": {
+    "type": "string",
+    "description": "机器人标识",
+    "default": "",
+    "hint": "多个 bot 共用一个库时用来区分，单 bot 留空"
+  }
+}
